@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.container,
+section > h2 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: rgb(56, 56, 192);
+    color: #fff;
+    border-bottom: 3px solid purple;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    margin-left: 16px;
+}
+
+header li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header li:hover {
+    border-bottom: 1px solid #fff;
+    border-color: #fff;
+}
+
+section .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section > h2 {
+    font-size: 1.6em;
+}
+
+#about {
+    margin-bottom: 24px;
+}
+
+#about img{
+    width: 40%;
+    height: 40%;
+    margin-right: 32px;
+}
+
+#about h2 {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(56, 56, 192);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    margin-bottom: 16px;
+}
+
+.product-title h2 {
+    border-bottom: 2px solid rgb(56, 56, 192);
+}
+
+.products .produtos img {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.products .produtos a {
+    color: black;
+    text-decoration: none;
+}
+
+.products .produtos button {
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    border: none;
+    background-color: rgb(56, 56, 192);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.products .produtos button:hover {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    header li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    #about img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .products {
+        display: block;
+        margin: 16px 0;
+    }
+
+    .produtos {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .produtos img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .produtos button {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .container,
+    section > h2 {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
